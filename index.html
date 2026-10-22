@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>Moe's Smart Home</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #101827;
+      color: #f8fafc;
+      font-family: Arial, sans-serif;
+      padding: 24px 18px;
+    }
+    header { margin-bottom: 30px; }
+    h1 { font-size: 27px; margin-bottom: 6px; }
+    p { color: #aab6c8; margin-top: 0; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .tile {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 145px;
+      padding: 17px;
+      border-radius: 18px;
+      background: #202c40;
+      color: white;
+      text-decoration: none;
+      border: 1px solid #344157;
+    }
+    .icon { font-size: 30px; }
+    .name { font-weight: bold; font-size: 15px; }
+    .sub { font-size: 12px; color: #aab6c8; margin-top: 5px; }
+    footer {
+      text-align: center;
+      color: #8b9bb2;
+      margin-top: 32px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🏠 Moe's Smart Home</h1>
+    <p>Your home, one dashboard.</p>
+  </header>
+
+  <main class="grid">
+    <a class="tile" href="https://home.google.com/">
+      <span class="icon">🌡️</span>
+      <span><span class="name">Nest Heating</span>
+      <div class="sub">Google Home</div></span>
+    </a>
+
+    <a class="tile" href="https://home.google.com/">
+      <span class="icon">🔥</span>
+      <span><span class="name">Office Heater</span>
+      <div class="sub">Smart Life / Google Home</div></span>
+    </a>
+
+    <a class="tile" href="https://home.google.com/">
+      <span class="icon">🔥</span>
+      <span><span class="name">Living Room Heater</span>
+      <div class="sub">Smart Life / Google Home</div></span>
+    </a>
+
+    <a class="tile" href="https://myaccount.google.com/">
+      <span class="icon">📺</span>
+      <span><span class="name">LG TV</span>
+      <div class="sub">Controls coming soon</div></span>
+    </a>
+
+    <a class="tile" href="https://mysecurity.eufylife.com/">
+      <span class="icon">📷</span>
+      <span><span class="name">Eufy Security</span>
+      <div class="sub">Open Eufy</div></span>
+    </a>
+
+    <a class="tile" href="http://192.168.1.1/">
+      <span class="icon">📡</span>
+      <span><span class="name">Home Network</span>
+      <div class="sub">Linksys Router</div></span>
+    </a>
+  </main>
+
+  <footer>Made for Moe • Version 1.0</footer>
+</body>
+</html>

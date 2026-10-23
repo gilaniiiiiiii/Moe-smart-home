@@ -2,94 +2,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101827">
-  <title>Moe's Smart Home</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: #101827;
-      color: #f8fafc;
-      font-family: Arial, sans-serif;
-      padding: 24px 18px;
-    }
-    header { margin-bottom: 30px; }
-    h1 { font-size: 27px; margin-bottom: 6px; }
-    p { color: #aab6c8; margin-top: 0; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 14px;
-    }
-    .tile {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 145px;
-      padding: 17px;
-      border-radius: 18px;
-      background: #202c40;
-      color: white;
-      text-decoration: none;
-      border: 1px solid #344157;
-    }
-    .icon { font-size: 30px; }
-    .name { font-weight: bold; font-size: 15px; }
-    .sub { font-size: 12px; color: #aab6c8; margin-top: 5px; }
-    footer {
-      text-align: center;
-      color: #8b9bb2;
-      margin-top: 32px;
-      font-size: 12px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>Moe's Smart Home</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#101827;color:#f8fafc;font-family:Arial,sans-serif;padding:22px 18px}
+header{margin:12px 0 30px}
+h1{font-size:28px;margin:0 0 8px}
+p{color:#a9b6c9;margin:0}
+h2{font-size:17px;margin:28px 0 14px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.tile{display:flex;flex-direction:column;justify-content:space-between;min-height:145px;padding:17px;border-radius:18px;background:#202c40;color:white;text-decoration:none;border:1px solid #344157}
+.tile:active{background:#30435d}
+.icon{font-size:29px}
+.name{font-size:15px;font-weight:bold}
+.sub{font-size:12px;color:#aab6c8;margin-top:6px;line-height:1.4}
+.wide{grid-column:span 2;min-height:110px}
+footer{text-align:center;color:#8191aa;margin:35px 0;font-size:12px}
+</style>
 </head>
 <body>
-  <header>
-    <h1>🏠 Moe's Smart Home</h1>
-    <p>Your home, one dashboard.</p>
-  </header>
+<header>
+<h1>🏠 Moe's Smart Home</h1>
+<p>Your home, one dashboard.</p>
+</header>
 
-  <main class="grid">
-    <a class="tile" href="https://home.google.com/">
-      <span class="icon">🌡️</span>
-      <span><span class="name">Nest Heating</span>
-      <div class="sub">Google Home</div></span>
-    </a>
+<h2>🌡️ Heating</h2>
+<div class="grid">
+<a class="tile wide" href="https://home.google.com/">
+<span class="icon">🏡</span>
+<span><div class="name">Nest Central Heating</div>
+<div class="sub">Open Google Home for temperature controls ↗</div></span>
+</a>
 
-    <a class="tile" href="https://home.google.com/">
-      <span class="icon">🔥</span>
-      <span><span class="name">Office Heater</span>
-      <div class="sub">Smart Life / Google Home</div></span>
-    </a>
+<a class="tile" href="https://home.google.com/">
+<span class="icon">🔥</span>
+<span><div class="name">Living Room Heater</div>
+<div class="sub">Power & temperature ↗</div></span>
+</a>
 
-    <a class="tile" href="https://home.google.com/">
-      <span class="icon">🔥</span>
-      <span><span class="name">Living Room Heater</span>
-      <div class="sub">Smart Life / Google Home</div></span>
-    </a>
+<a class="tile" href="https://home.google.com/">
+<span class="icon">🔥</span>
+<span><div class="name">Office Heater</div>
+<div class="sub">Power & temperature ↗</div></span>
+</a>
+</div>
 
-    <a class="tile" href="https://myaccount.google.com/">
-      <span class="icon">📺</span>
-      <span><span class="name">LG TV</span>
-      <div class="sub">Controls coming soon</div></span>
-    </a>
+<h2>📺 Entertainment & Security</h2>
+<div class="grid">
+<a class="tile" href="https://www.lg.com/uk/lg-thinq">
+<span class="icon">📺</span>
+<span><div class="name">LG TV</div>
+<div class="sub">LG ThinQ information ↗</div></span>
+</a>
 
-    <a class="tile" href="https://mysecurity.eufylife.com/">
-      <span class="icon">📷</span>
-      <span><span class="name">Eufy Security</span>
-      <div class="sub">Open Eufy</div></span>
-    </a>
+<a class="tile" href="https://mysecurity.eufylife.com/">
+<span class="icon">📷</span>
+<span><div class="name">Eufy Cameras</div>
+<div class="sub">Eufy web portal ↗</div></span>
+</a>
+</div>
 
-    <a class="tile" href="http://192.168.1.1/">
-      <span class="icon">📡</span>
-      <span><span class="name">Home Network</span>
-      <div class="sub">Linksys Router</div></span>
-    </a>
-  </main>
+<h2>📡 Network</h2>
+<div class="grid">
+<a class="tile wide" href="http://192.168.1.1/">
+<span class="icon">🌐</span>
+<span><div class="name">Linksys Router</div>
+<div class="sub">Open router settings on home Wi-Fi ↗</div></span>
+</a>
+</div>
 
-  <footer>Made for Moe • Version 1.0</footer>
+<footer>Made for Moe • Version 2.0</footer>
 </body>
 </html>
